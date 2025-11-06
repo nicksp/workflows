@@ -43,6 +43,9 @@ jobs:
     steps:
       - name: Setup repo
         uses: nicksp/workflows/.github/actions/setup-repo@757f0794d25ac6a6d484c0740ad5ef8638f768f2 # v1
+      - name: Build
+        run: ${{ inputs.build }}
+        if: inputs.build != ''
       - name: Lint
         run: ${{ inputs.lint }}
         if: inputs.lint != ''
@@ -69,5 +72,6 @@ jobs:
           node-version: ${{ matrix.node }}
       - name: Build
         run: ${{ inputs.build }}
+        if: inputs.build != ''
       - name: Test
         run: ${{ inputs.test }}
