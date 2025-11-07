@@ -1,11 +1,15 @@
 {
   "name": "@nicksp/workflows",
   "description": "Shared GitHub Actions workflows",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@10.20.0",
   "author": "Nick Plekhanov (https://plekhanov.me/)",
   "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:package": "nlx publint",
