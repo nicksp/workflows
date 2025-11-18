@@ -16,7 +16,7 @@
     "update": "nlx actions-up"
   },
   "devDependencies": {
-    "@nicksp/eslint-config": "^1.5.2",
+    "@nicksp/eslint-config": "^1.5.3",
     "@nicksp/prettier-config": "^1.1.0",
     "eslint": "^9.39.1",
     "prettier": "^3.6.2"
