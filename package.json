@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.23.0",
+  "packageManager": "pnpm@10.24.0",
   "author": "Nick Plekhanov (https://plekhanov.me/)",
   "license": "MIT",
   "engines": {
@@ -16,10 +16,10 @@
     "update": "nlx actions-up"
   },
   "devDependencies": {
-    "@nicksp/eslint-config": "^1.5.3",
+    "@nicksp/eslint-config": "^1.5.4",
     "@nicksp/prettier-config": "^1.1.0",
     "eslint": "^9.39.1",
-    "prettier": "^3.6.2"
+    "prettier": "^3.7.3"
   },
   "prettier": "@nicksp/prettier-config"
 }
