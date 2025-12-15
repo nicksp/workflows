@@ -19,7 +19,7 @@
     "@nicksp/eslint-config": "^1.5.4",
     "@nicksp/prettier-config": "^1.1.0",
     "eslint": "^9.39.1",
-    "prettier": "^3.7.3"
+    "prettier": "^3.7.4"
   },
   "prettier": "@nicksp/prettier-config"
 }
