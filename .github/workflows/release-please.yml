@@ -1,4 +1,4 @@
-name: Release
+name: Release Please
 permissions: {}
 
 on:
@@ -48,7 +48,7 @@ jobs:
     if: needs.release-please.outputs.release_created && inputs.publish
     steps:
       - name: Setup repo
-        uses: nicksp/workflows/.github/actions/setup-repo@757f0794d25ac6a6d484c0740ad5ef8638f768f2 # v1
+        uses: nicksp/workflows/.github/actions/setup-repo@1d5c05adf0eefe05f06ca8315a7e2da74da6a2a0
       - name: Build
         run: ${{ inputs.build }}
         if: inputs.build != ''
