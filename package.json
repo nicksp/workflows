@@ -13,6 +13,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:package": "nlx publint",
+    "format": "prettier --write .",
+    "typecheck": "echo skip typecheck",
+    "build": "echo skip build",
+    "test": "echo skip test",
     "update": "nlx actions-up"
   },
   "devDependencies": {

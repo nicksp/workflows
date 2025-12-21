@@ -1,0 +1,13 @@
+name: Test Dogfooding
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    uses: nicksp/workflows/.github/workflows/test.yml@main
