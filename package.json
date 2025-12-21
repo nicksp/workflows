@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.1",
   "author": "Nick Plekhanov (https://plekhanov.me/)",
   "license": "MIT",
   "engines": {
