@@ -1,0 +1,32 @@
+name: Release Preview
+permissions: {}
+
+on:
+  workflow_call:
+    inputs:
+      build:
+        required: false
+        type: string
+        default: nr build
+
+      compact:
+        required: false
+        type: boolean
+        default: false
+
+      comment-package-manager:
+        required: false
+        type: string
+        default: ""
+
+jobs:
+  release:
+    name: Release Preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup repo
+        uses: nicksp/workflows/.github/actions/setup-repo@23eefb58a60b2fcc49f326bc2d7e263dd4346750
+      - name: Build
+        run: ${{ inputs.build }}
+      - name: Publish
+        run: pnpm dlx pkg-pr-new publish --pnpm ${{ inputs.compact && '--compact' || '' }} ${{ inputs['comment-package-manager'] && format('--packageManager={0}', inputs['comment-package-manager']) || '' }}
