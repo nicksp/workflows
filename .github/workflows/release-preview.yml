@@ -1,5 +1,4 @@
 name: Release Preview
-permissions: {}
 
 on:
   workflow_call:
@@ -28,9 +27,6 @@ jobs:
   release:
     name: Release Preview
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
     steps:
       - name: Setup repo
         uses: nicksp/workflows/.github/actions/setup-repo@23eefb58a60b2fcc49f326bc2d7e263dd4346750
