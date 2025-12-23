@@ -12,6 +12,7 @@ A collection of reusable GitHub Actions workflows and actions for TypeScript pro
 
 - Test: Runs tests and lints code
 - Release: Publishes releases to npm
+- Preview Release: Triggers an instant preview release without publishing anything to NPM
 
 ## Included Actions
 

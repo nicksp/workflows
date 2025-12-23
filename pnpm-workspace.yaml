@@ -2,3 +2,4 @@ strictDepBuilds: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - chokidar@5.0.0
+  - cached-factory@0.1.0

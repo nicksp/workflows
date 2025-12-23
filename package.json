@@ -17,12 +17,12 @@
     "typecheck": "echo skip typecheck",
     "build": "echo skip build",
     "test": "echo skip test",
-    "update": "nlx actions-up",
+    "update": "nlx actions-up --min-age 7",
     "release": "bumpp"
   },
   "devDependencies": {
-    "@nicksp/eslint-config": "^1.5.4",
-    "@nicksp/prettier-config": "^1.1.0",
+    "@nicksp/eslint-config": "^1.5.5",
+    "@nicksp/prettier-config": "^1.1.1",
     "bumpp": "^10.3.2",
     "eslint": "^9.39.2",
     "prettier": "^3.7.4"
