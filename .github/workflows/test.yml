@@ -47,7 +47,7 @@ jobs:
     if: ${{ !inputs.skip-lint }}
     steps:
       - name: Setup repo
-        uses: nicksp/workflows/.github/actions/setup-repo@23eefb58a60b2fcc49f326bc2d7e263dd4346750
+        uses: nicksp/workflows/.github/actions/setup-repo@81538d2ed332a89b92cd27304fd36e599d87a4bf
       - name: Build
         run: ${{ inputs.build }}
         if: inputs.build != ''
@@ -72,7 +72,7 @@ jobs:
 
     steps:
       - name: Setup repo
-        uses: nicksp/workflows/.github/actions/setup-repo@23eefb58a60b2fcc49f326bc2d7e263dd4346750
+        uses: nicksp/workflows/.github/actions/setup-repo@81538d2ed332a89b92cd27304fd36e599d87a4bf
         with:
           node-version: ${{ matrix.node }}
       - name: Build
