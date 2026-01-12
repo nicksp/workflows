@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: Setup repo
-        uses: nicksp/workflows/.github/actions/setup-repo@23eefb58a60b2fcc49f326bc2d7e263dd4346750
+        uses: nicksp/workflows/.github/actions/setup-repo@2cc347bf0b61e9faedf8d3d8ba5d37d434123abb
         with:
           fetch-all: true
       - name: Generate GitHub changelog
